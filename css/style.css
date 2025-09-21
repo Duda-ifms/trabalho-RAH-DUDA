@@ -1,21 +1,99 @@
-.header {
-  background-color: #111; 
-  padding: 30px;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+body {
   font-family: Arial, sans-serif;
-  
- 
-  background: linear-gradient(90deg, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  background-clip: text;
-  color: transparent; 
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  background-color: rgb(188, 123, 248);
+header {
+  background-color: #bd1212; 
+  color: rgb(252, 250, 253); 
+  padding: 20px;
+  text-align: center; 
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+.imagem {
+    width: 200px;
+    transition: transform 0.3s ease; 
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .imagem:hover {
+    transform: translateY(-20px) scale(1.1); 
+  }
+
+  .imagem {
+    width: 200px;
+    transition: transform 0.1s;
+    display: inline-block;
+    margin: 20px;
+  }
+
+   .container {
+    display: flex;
+    gap: 20px;
+  }
+  .imagem {
+    width: 200px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .logo-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-image: url('image/Lucid_Origin_crie_uma_logo_mgica_e_vibrante_com_iniciais_de_E__3(1).jpg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 100px; 
+  padding-left: 120px; 
+  }
+
+  header img {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+  }
+
+  
