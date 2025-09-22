@@ -21,6 +21,11 @@ const cards = [
     description: "as Winx carregando o homem aranha por que ele desmaiou",
     image: "image/Resgate no Céu Claro.png",
   },
+  {
+    title: "homem aranha e winx",
+    description: "as Winx carregando o homem aranha por que ele desmaiou",
+    image: "image/homem.jpg",
+  },
 ];
 
 const cardList = document.getElementById("card-list");
