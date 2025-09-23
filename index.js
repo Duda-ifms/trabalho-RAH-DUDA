@@ -1,30 +1,30 @@
 const cards = [
   {
-    title: "Homem Aranha ",
     image: "image/WhatsApp Image 2025-09-16 at 17.16.27.jpeg",
+    title: "Homem Aranha ",
     description: "Salvando o mundo junto com as Winx",
     
   },
   {
-    title: "Homem Aranha e winx",
     image: "image/WhatsApp Image 2025-09-16 at 18.07.50.jpeg",
+    title: "Homem Aranha e winx",
     description: "Salvando o mundo",
     
   },
   {
+    image: "image/Homem-Aranha e as Fadas Mágicas(1).png",
     title: "Homem Aranha",
     description: "será que é aranha?",
-    image: "image/Homem-Aranha e as Fadas Mágicas(1).png",
   },
   {
-    title: "homem aranha e winx",
-    description: "as Winx carregando o homem aranha por que ele desmaiou",
     image: "image/Resgate no Céu Claro.png",
-  },
-  {
     title: "homem aranha e winx",
     description: "as Winx carregando o homem aranha por que ele desmaiou",
+  },
+  {
     image: "image/homem.jpg",
+    title: "homem aranha e winx",
+    description: "as Winx carregando o homem aranha por que ele desmaiou",
   },
 ];
 
