@@ -42,9 +42,9 @@ const cards = [
     description: "Winx, por que choras?",
   },
    {
-    image: "",
-    title: "Homem Aranha ",
-    description: "Winx, por que choras?",
+    image: "image/WhatsApp Image 2025-09-24 at 22.03.12.jpeg",
+    title: "Homem Aranha e Winx ",
+    description: "Homem-Aranha no mundo das Winx",
   },
 ];
 
