@@ -12,13 +12,15 @@ header {
   text-align: center; 
 }
 
- 
+.card-logo{
+  width: 175px;
+  height: 175px;
+}
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* sempre 3 cards por linha */
   gap: 20px;
-  justify-content: center;
   padding: 20px;
 }
 
@@ -26,76 +28,35 @@ header {
   background-color: rgb(182, 27, 27);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 250px;
   padding: 15px;
+  text-align: center;
   transition: transform 0.2s;
 }
 
 .card:hover {
   transform: scale(1.05);
+  background-color: #fc6b6b;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 16px;
+  width: 65%;
+  border-radius: 12px;
   height: 180px;
   object-fit: cover;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .card h2 {
   font-size: 1.2rem;
   margin: 5px 0;
+  color: #fff;
 }
 
 .card p {
-  color: #0e0d0d;
+  color: #f5f5f5;
   font-size: 0.9rem;
 }
-.imagem {
-    width: 200px;
-    transition: transform 0.3s ease; 
-    display: inline-block;
-    margin: 20px;
-  }
 
-  .imagem:hover {
-    transform: translateY(-20px) scale(1.1); 
-  }
-
-  .imagem {
-    width: 200px;
-    transition: transform 0.1s;
-    display: inline-block;
-    margin: 20px;
-  }
-
-   .container {
-    display: flex;
-    gap: 20px;
-  }
-  .imagem {
-    width: 200px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-
-  .logo-header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-image: url('image/Lucid_Origin_crie_uma_logo_mgica_e_vibrante_com_iniciais_de_E__3(1).jpg');
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: left center;
-  height: 100px; 
-  padding-left: 120px; 
-  }
-
-  header img {
-    width: 100px; 
-    height: auto;
-    margin-right: 10px;
-  }
-
-  
+p:hover{
+  color: #000;
+}

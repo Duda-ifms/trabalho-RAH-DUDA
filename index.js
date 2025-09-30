@@ -2,7 +2,7 @@ const cards = [
   {
     image: "image/WhatsApp Image 2025-09-16 at 17.16.27.jpeg",
     title: "Homem Aranha e Winx ",
-    description: "Salvando o mundo junto com as Winx",
+    description: "Conhecendo o universo das nossas fadinhas",
     
   },
   {
@@ -14,37 +14,37 @@ const cards = [
   {
     image: "image/Homem-Aranha e as Fadas Mágicas(1).png",
     title: "Homem Aranha e Winx",
-    description: "será que é aranha?",
+    description: "O mundo divertido com as Winx",
   },
   {
     image: "image/Resgate no Céu Claro.png",
     title: "Homem Aranha e Winx",
-    description: "as Winx carregando o homem aranha por que ele desmaiou",
+    description: "O Homem Aranha desmaiou",
   },
   {
     image: "image/homem.jpg",
     title: "Homem Aranha e Winx",
-    description: "as Winx carregando o homem aranha por que ele desmaiou",
+    description: "Voando com as Winx",
   },
    {
     image: "image/WhatsApp Image 2025-09-23 at 17.42.19.jpeg",
     title: "Homem Aranha e Winx ",
-    description: "Não amiga, você não está manchada",
+    description: "Sinta o poder da aranha",
   },
   {
     image: "image/WhatsApp Image 2025-09-23 at 17.42.30.jpeg",
     title: "Homem Aranha ",
-    description: "Mais uma vez salvando o mundo",
+    description: "Aranha com asas",
   },
   {
     image: "image/WhatsApp Image 2025-09-23 at 18.19.47.jpeg",
     title: "Homem Aranha ",
-    description: "Winx, por que choras?",
+    description: "Salvando a dimensão mágica?",
   },
    {
     image: "image/WhatsApp Image 2025-09-24 at 22.03.12.jpeg",
-    title: "Homem Aranha e Winx ",
-    description: "Homem-Aranha no mundo das Winx",
+    title: "Homem Aranha e as Winx",
+    description: "Salvando a dimensão mágica",
   },
 ];
 
