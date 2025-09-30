@@ -31,11 +31,17 @@ header {
   padding: 15px;
   text-align: center;
   transition: transform 0.2s;
+  overflow: visible; /* para mostrar o glitter */
+  
 }
 
 .card:hover {
   transform: scale(1.05);
   background-color: #fc6b6b;
+  animation: magicIn 0.6s forwards ease-out; /* efeito marvel */
+  transform: scale(1.05);
+  background-color: #ff5b5b;
+  box-shadow: 0 0 20px #fc6b6b, 0 0 40px #ff8c8c, 0 0 60px #ffb3b3;
 }
 
 .card img {
@@ -59,4 +65,90 @@ header {
 
 p:hover{
   color: #000;
+}
+
+ @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes magicIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.1) rotate(3deg);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+      }
+    }
+
+    /* Efeito hover */
+    .card:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: 0.3s ease-in-out;
+    }
+
+    /* Delay sequencial para cada card */
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(6) { animation-delay: 0.6s; }
+    .card:nth-child(7) { animation-delay: 0.7s; }
+    .card:nth-child(8) { animation-delay: 0.8s; }
+    .card:nth-child(9) { animation-delay: 0.9s; }
+
+
+/* Cria o brilho de fadinha com pseudo-elemento */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(160, 14, 245, 0.8) 0%, rgba(22, 34, 197, 0) 70%);
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+/* Ao passar o mouse, o card aumenta e o brilho aparece */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(81, 57, 223, 0.6), 0 0 20px rgba(139, 52, 238, 0.5);
+}
+
+.card:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  animation: sparkle 1s infinite alternate;
+}
+
+/* Animação do brilho piscando tipo fadinha */
+@keyframes sparkle {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1) rotate(15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-15deg);
+    opacity: 0.6;
+  }
 }

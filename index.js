@@ -62,5 +62,11 @@ cards.forEach(card => {
   `;
 
   cardList.appendChild(cardDiv);
+
+   AOS.init({
+    duration: 1000, // duração da animação em ms
+    easing: 'ease-in-out', // tipo de animação
+    once: true, // anima uma vez apenas
+  });
 });
 
