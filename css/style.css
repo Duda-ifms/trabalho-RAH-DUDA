@@ -22,6 +22,7 @@ header {
   grid-template-columns: repeat(3, 1fr); /* sempre 3 cards por linha */
   gap: 20px;
   padding: 20px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
 }
 
 .card {
